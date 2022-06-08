@@ -2,7 +2,7 @@
     "name": "justoverclock/internal-link-dofollow",
     "description": "Add Dofollow attribute to internal link",
     "keywords": [
-        "flarum"
+        "internal link dofollow"
     ],
     "type": "flarum-extension",
     "license": "MIT",
@@ -19,11 +19,11 @@
     "extra": {
         "flarum-extension": {
             "title": "ILDF",
-            "category": "",
+            "category": "features",
             "icon": {
-                "name": "",
-                "color": "",
-                "backgroundColor": ""
+                "name": "fas fa-link",
+                "color": "blue",
+                "backgroundColor": "white"
             }
         },
         "flarum-cli": {
