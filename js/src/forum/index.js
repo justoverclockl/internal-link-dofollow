@@ -8,16 +8,14 @@ app.initializers.add('justoverclock/internal-link-dofollow', () => {
     const postBody = this.element.querySelector('.Post-body');
     const linkTag = postBody.querySelectorAll('a');
 
-    for (const link of linkTag) {
-      if (link.classList.contains('PostMention')) {
-        continue;
-      }
 
-      const href = link.href;
-
+    linkTag.forEach((link) => {
+      if (link.classList.contains('PostMention')) return;
+      const href = link.href
       if (href.startsWith(baseUrl)) {
         linkTag[0].attributes[1].nodeValue = 'dofollow';
       }
-    }
+    })
+    
   });
 });
